@@ -17,4 +17,16 @@ namespace stdln {
 			}
 		}
 	}
+	void exitchoice(int newLines) {
+		char keyHit;
+		while (true) {
+			if (_kbhit()) {
+				keyHit = _getch();
+				if (keyHit == key1 || keyHit == key2 || keyHit == restartKey1 || keyHit == restartKey2) {
+					callmain(newLines);
+				}
+				else if (keyHit == okey1 || keyHit == okey2 || keyHit == exitKey1 || keyHit == exitKey2) return;
+			}
+		}
+	}
 }
