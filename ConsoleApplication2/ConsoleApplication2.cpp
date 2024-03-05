@@ -8,11 +8,10 @@ int main()
 {
     std::cout << "Hello World!\n";
     stdln::newInstance myInstance;
-    myInstance.initialise(thred, &myInstance);
+    myInstance.initialiseThread(thred, &myInstance);
     myInstance.thread_ptr->join();
     
 }
 void thred() {
-    std::cout << "hi";
-    std::cin.get();
+    
 }

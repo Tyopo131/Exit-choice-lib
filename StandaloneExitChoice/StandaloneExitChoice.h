@@ -4,7 +4,8 @@ namespace stdln
 {
 	class newInstance {
 	public:
-		void initialise(void (*function)(), newInstance* object);
+		void initialiseThread(void (*function)(), newInstance* object);
 		std::thread* thread_ptr;
+		void unititialiseThread(std::thread*);
 	};
 }
