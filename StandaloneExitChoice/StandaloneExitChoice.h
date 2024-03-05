@@ -6,6 +6,6 @@ namespace stdln
 	public:
 		void initialiseThread(void (*function)(), newInstance* object);
 		std::thread* thread_ptr;
-		void unititialiseThread(std::thread*);
+		void uninitialiseThread(std::thread*);
 	};
 }

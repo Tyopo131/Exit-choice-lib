@@ -7,7 +7,7 @@ namespace stdln {
 		object->thread_ptr = new std::thread(function);
 		return;
 	}
-	void newInstance::unititialiseThread(std::thread* _THREAD) {
+	void newInstance::uninitialiseThread(std::thread* _THREAD) {
 		delete _THREAD;
 		return;
 	}
